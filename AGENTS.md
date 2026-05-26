@@ -16,6 +16,7 @@ Ocr/
 ├── docker-compose.yml           # Ignorado por git (personal)
 ├── Dockerfile
 ├── requirements.txt
+├── README.md
 ├── .gitignore
 └── AGENTS.md
 ```
