@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from PIL import Image
 import pytesseract
-import tempfile
-import os
 
 app = Flask(__name__)
 
