@@ -1,0 +1,16 @@
+services:
+  ocr-app:
+    build: .
+    ports:
+      - "5010:5010"
+    environment:
+      - VIRTUAL_HOST=tu-dominio.ejemplo
+      - LETSENCRYPT_HOST=tu-dominio.ejemplo
+      - LETSENCRYPT_EMAIL=email@ejemplo.com
+    networks:
+      - letsencrypt_bridge
+
+networks:
+  letsencrypt_bridge:
+    name: letsencrypt_bridge
+    external: true
